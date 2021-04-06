@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #ededed;
+    min-height: 300vh;
+}
+.container{
+    width: 600px;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    color: #433466;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.search-bar{
+    padding: 30px 0;
+}
+
+input{
+    width: 360px;
+    height: 50px;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    overflow: hidden;
+}
+.search-input{
+    margin-right: 15px;
+}
+
+input::placeholder{
+    color: #808080;
+}
+.btn{
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #433466;
+    font-size: 15px;
+    color: #fff;
+    padding: 10px 20px;
+    outline: none;
+    cursor: pointer;
+}
+.btn:hover,
+.btn:focus{
+    opacity: 0.7;
+    outline: none;
+}
+
+.contact-add{
+    position: fixed;
+    right: 15px;
+    bottom: 30px;
+}
+
+.add-btn{
+    box-shadow: 3px 5px 5px 0 rgb(180, 176, 176);
+    display: flex;
+    align-items: center;
+}
+
+button img{
+    padding-right: 10px;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+div.letter{
+    padding: 0.5rem 0;
+}
+
+.contact{
+    width: 472px;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.info{
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.info p{
+    padding: 0.5rem 0;
+}
+.left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.right{
+    width: 50%;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    word-break: break-all;
+}
+/* #name{
+    font-size: 20px;
+}
+
+#status{
+    font-size: 16px;
+}
+
+#phone, #email{
+    font-size: 14px;
+    opacity: 0.6;
+} */
+.icon{
+    border: none;
+    background-color: #fff;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    outline: none;
+    cursor: pointer;
+    padding: 0.4rem;
+    border-radius: 50%;
+}
+.icon:hover{
+    opacity: 0.7;
+}
+
+
+
+
+
+
+/* delete/edit popup */
+
+.edit-delete{
+    border-radius: 5px;
+    position: absolute;
+    background-color: #fff;
+    font-size: 16px;
+    padding: 10px 20px ;
+    box-shadow: 0 0 5px rgb(228, 228, 228);
+    top: 28px;
+    right: 19px;
+    display: none;
+}
+
+.pop-up{
+    display: block;
+}
+
+.edit-delete button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+    text-align: start;
+}
+.edit-delete i{
+    padding-right: 5px;
+}
+.edit{
+    color: #433466;
+}
+.delete{
+    color: red; 
+}
+
+
+.add-forum-wrapper,
+.edit-forum-wrapper
+{ 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(71, 71, 71, 0.7);
+    display: none;
+}
+
+.add-pop-up,
+.edit-pop-up
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ededed;
+    padding: 40px 80px;
+    border-radius: 5px;
+    
+    
+}
+
+.contact-text{
+    padding: 10px;
+    color: #433466;
+}
+
+
+.add-forum,
+.edit-forum{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.add-forum input,
+.edit-forum input
+{
+    padding: 15px;
+    margin: 10px 0 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
+.btn-handler{
+    width: 100%;
+    margin: 10px 0 10px;
+}
+
+.active{
+    display: flex;
+}

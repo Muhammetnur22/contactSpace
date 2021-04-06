@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="style.css">
+        <title>contactSpace</title>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Header -->
+            <div class="header">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="img/contact.svg" alt="contact-icon">
+                    <h2>ContactSpace</h2>
+                </div>
+                <!-- Search Block -->
+                <div class="search-bar">
+                    <input type="text" placeholder="Search here..." id="search" class="search-input">
+                    <button class="search-btn btn" >Search</button>
+                </div>
+            </div>
+            <!-- Contacts -->
+            <div class="main">
+                <div class="contacts-text">
+                    <span>Contacts</span>
+                </div> 
+
+            <!-- <div class="contacts">
+                <div id="M">
+                    <div class="letter">M</div> -->
+                    <!-- Contact -->
+                    <!-- <div class="contact">
+                        <div class="info">
+                            <div class="left"> 
+                                <p id="name">Muhammetnur Bagbekov</p>
+                                <p id="status">Trainee</p>
+                            </div>
+                            <div class="right">
+                                <p id="phone">+99361670716</p>
+                                <p id="email">bagbekovmuhammetnur@gmail.com</p>
+                            </div>
+                        </div> -->
+                        
+                        <!-- <button class="icon dots"><i class="fas fa-ellipsis-v dots"></i></button>
+                        
+                        <div class="edit-delete ">
+                            <button class="edit"><i class="dots fas fa-pencil-alt"> </i>Edit</button>
+                            <br>
+                            <button class="delete"><i class="dots far fa-trash-alt"></i>Delete</button>
+                        </div> -->
+                        
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+        </div> 
+        
+
+        
+    </div>
+
+    <!-- Add button -->
+   
+    <div class="contact-add">
+        <button class="add-contact-btn btn">
+            <img src="img/contact-add.svg" alt="add-contact">
+            Add Contact
+        </button>
+    </div>
+    
+    <!-- Add forum block -->
+    
+    <div class="add-forum-wrapper">
+        <div class="add-pop-up">
+            
+            <div class="contact-text">
+                <h3> Add Contact</h3> 
+            </div>
+            
+            <form id="add-forum">
+                <div class="add-forum">
+                        <input type="text" id="name" placeholder="Name and surname:">
+                        <input type="number" id="phone" placeholder="Phone number:" >
+                        <input type="email" id="email" placeholder="Email address:">
+                        <input type="text"  id="status" placeholder="Status">
+                </div>
+                    
+                    <div class="btn-handler">
+                    <input type="submit" class="btn" value="Add" id="add">
+                    </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Edit forum block -->
+    
+    <div class="edit-forum-wrapper">
+        <div class="edit-pop-up">
+
+            <div class="contact-text">
+                <h3> Edit Contact</h3> 
+            </div>
+                <form id="edit-forum">
+                    <div class="edit-forum">
+                        <input type="text" placeholder="Name and surname:">
+                        <input type="number" placeholder="Phone number:" >
+                        <input type="email" placeholder="Email address:">
+                        <input type="text" placeholder="Status">
+                    </div>
+                
+                    <div class="btn-handler">
+                        <input type="submit" class="btn" value="Save" id="save">
+                    </div>
+                </form>
+        </div>
+    </div>
+    
+    
+    <script src="app.js"></script>
+    
+</body>
+</html>
